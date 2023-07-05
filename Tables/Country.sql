@@ -1,0 +1,22 @@
+USE [CourseManagement]
+GO
+
+/****** Object:  Table [dbo].[COUNTRY]    Script Date: 05-07-2023 15:28:06 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[COUNTRY](
+	[CountryID] [int] IDENTITY(1,1) NOT NULL,
+	[CountryCode] [varchar](4) NULL,
+	[CountryName] [varchar](100) NULL,
+	[Status] [varchar](3) NULL,
+ CONSTRAINT [PK_COUNTRY] PRIMARY KEY CLUSTERED 
+(
+	[CountryID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
